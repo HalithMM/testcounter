@@ -1,6 +1,5 @@
 import React, { useState, type FC } from "react"
 import {  type counterprops, type numberState, type objects, type stringState } from "../types/Usestate.type"
-
 export const Counter:FC<counterprops> = ({getData,fetch}) => {
   const [count,setCount]=useState<numberState>(0)
   const [input,setInput] = useState<stringState>("")
