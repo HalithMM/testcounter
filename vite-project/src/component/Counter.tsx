@@ -38,7 +38,7 @@ export const Counter:FC<counterprops> = ({getData,fetch}) => {
       Counter {count}
       <button onClick={()=>setCount(prev=>prev+1)}>Next</button>
       <form onSubmit={handleSubmit}>
-        <h1>Name12</h1>
+        <h1>Name123</h1>
         <input type="text" value={input} onChange={handleChange} />
         <button type="submit">submit</button>
       </form>
