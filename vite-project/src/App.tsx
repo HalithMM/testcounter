@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import { Counter } from './component/Counter' 
 import { type objects, type storeObject, type stringState } from './types/Usestate.type'
+import { Output } from './component/Output'
 
 function App() {
   const [getdata,setGetData] = useState<stringState>("")
@@ -18,7 +19,7 @@ function App() {
   const func = (getobject:objects) =>{
     setFetch(getobject)
     setObjects(prev=>[...prev,getobject])
-  }
+  } 
   return (
     <>
       <Counter getData={fetchdata} fetch={func}/>
@@ -30,6 +31,7 @@ function App() {
           <h1>{data.adult===true?"Adult":"Minor"}</h1>
         </div>
       ))}
+      <Output  data={getdata} objects={getObjects} />
     </>
   )
 }

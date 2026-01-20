@@ -6,3 +6,7 @@ export type counterprops = {
     getData:(value:stringState)=>void
     fetch:(value:objects)=>void
 }
+export type outputProps = {
+    data:stringState
+    objects:storeObject
+}
