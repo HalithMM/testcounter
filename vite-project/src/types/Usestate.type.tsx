@@ -10,3 +10,5 @@ export type outputProps = {
     data:stringState
     objects:storeObject
 }
+export type commentObject = {postId:number,name:string,email:string,body:string}[]
+export type arrayData = any[];
